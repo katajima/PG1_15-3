@@ -14,10 +14,7 @@ int Clamp(int a, int b, int c) {
 }
 
 
-/// <summary>
-/// test01
-/// </summary>
-/// <returns></returns>
+
 int main() {
 
 	return 0;
