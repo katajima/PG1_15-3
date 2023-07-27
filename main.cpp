@@ -1,18 +1,15 @@
 #include<stdio.h>
 
-
+//aは範囲　bは最小値　cは最大値
 int Clamp(int a, int b, int c) {
-	if (b > a&&b>c&&a<c) {
-
-		c = b;
-
-		return c = b;
+	if (a>c){
+		return a = c;
 	}
-	else
-	{
-		c = b;
-		
-		return c = b;
+	if (b>a) {
+		return a = b;
+	}
+	else {
+		return a;
 	}
 }
 
@@ -21,7 +18,7 @@ int Clamp(int a, int b, int c) {
 int main() {
 
 	int min = 0;
-	int max = 1;
+	int max = 0;
 	int num = 0;
 
 	while (true)
@@ -34,11 +31,13 @@ int main() {
 		printf("min～maxの範囲で制限したいnumの値を入力してください : ");
 		scanf_s("%d", &num);
 
-		Clamp(min, max, num);
+		num =Clamp(num, min, max);
 
-		printf("値を制限した結果 : %d", max);
+		printf("値を制限した結果 : %d", num);
 		printf("\n");
 	}
+
+	/////////////////
 
 	return 0;
 }
