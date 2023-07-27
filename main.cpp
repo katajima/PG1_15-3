@@ -2,7 +2,7 @@
 
 
 int Clamp(int a, int b, int c) {
-		return a;
+	return a;
 }
 
 
@@ -11,6 +11,6 @@ int Clamp(int a, int b, int c) {
 /// </summary>
 /// <returns></returns>
 int main() {
-
+	
 	return 0;
 }
