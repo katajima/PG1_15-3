@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-//aは範囲　bは最小値　cは最大値
+
 int Clamp(int a, int b, int c) {
 		return a;
 }
